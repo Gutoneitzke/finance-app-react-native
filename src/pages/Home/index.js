@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Header from '../../components/Header/index'
+import Header from '../../components/Header/index';
+import Balance from '../../components/Balance/index';
 
 export default function Home() {
   return (
     <View style={styles.container}>
         <Header name="@gutoneitzke" />
-        <Text>Página Home</Text>
+        <Balance />
+        
     </View>
   );
 }
@@ -13,6 +15,6 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fafafa'
   },
 });
