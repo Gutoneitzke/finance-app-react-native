@@ -8,7 +8,7 @@ const list = [
     id: 1,
     label: 'Boleto LUZ',
     value: '300,10',
-    date: '20.12.2022',
+    date: '20/12/2022',
     type: 0 //gastos
   },
   {
@@ -31,14 +31,14 @@ export default function Home() {
   return (
     <View style={styles.container}>
         <Header name="@gutoneitzke" />
-        <Balance balance="9.250,00" expenses="250,00" />
+        <Balance balance="9.250,00" expenses="-250,00" />
         <Text style={styles.title}>Últimas movimentações</Text>
         <FlatList 
           style={styles.list} 
           data={list} 
           keyExtractor={(item) => String(item.id)}
           showsVerticalScrollIndicator={false}
-          renderItem={({ item }) => <Movements /> }
+          renderItem={({ item }) => <Movements data={item}/> }
         ></FlatList>
     </View>
   );
