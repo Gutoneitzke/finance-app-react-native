@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import Header from '../../components/Header/index';
-import Balance from '../../components/Balance/index';
-import Movements from '../../components/Movements/index';
-import Actions from '../../components/Actions/index';
+import Header from '../../components/Header';
+import Balance from '../../components/Balance';
+import Movements from '../../components/Movements';
+import Actions from '../../components/Actions';
 
 const list = [
   {
