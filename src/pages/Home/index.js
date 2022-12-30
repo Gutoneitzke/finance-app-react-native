@@ -4,7 +4,7 @@ import Header from '../../components/Header/index'
 export default function Home() {
   return (
     <View style={styles.container}>
-        <Header />
+        <Header name="@gutoneitzke" />
         <Text>Página Home</Text>
     </View>
   );
